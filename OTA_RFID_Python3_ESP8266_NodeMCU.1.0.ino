@@ -33,8 +33,8 @@
 #include <SPI.h>
 #include <MFRC522.h>
 //#*#*#*#*#*#*#*#*#*#*#*#*#*#      Adjust all data below     #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-const char* ssid = "HopedesksAt66";
-const char* password = "MoreBetter";
+const char* ssid = "SomeSSID";
+const char* password = "SomeWifiPassword";
 // port and ip for python server listening and logging
 const uint16_t listenerport = 9999;
 const char * listenerhost = "192.168.1.15"; // ip
@@ -45,12 +45,12 @@ int opendoortime = 2000;
 
 //Array with keys
 String AllKeys[] = {
-"D548762A", // 1. Somebody
-"44E9825A", // 2. Speedy Gonzales
-"d4a4845a", // 3. Guy 2
-"e4447a5a", // 4. Guy 3
-"a46b855a", // 5. some name
-"a4ddec5a"  // 6. this name
+"D348762A", // 1. John Doe
+"D347762A", // 2. Mary Jane
+"D346762A", // 3. Tom Ford
+"D345762A", // 4. Donald
+"D344762A", // 5. Victor
+"D343762A"  // 6. Frank
     };
 int AllKeysLenght = 6; // the number of keys registered in AllKeys
 String RestartKey = "34FB795A";
